@@ -1,0 +1,104 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+CLAUDE.md
+*.claude
+claude.json
+.claude/
+
+# Data - AI Hub datasets
+data/raw/*.zip
+data/raw/**/*.json
+data/raw/**/*.jsonl
+data/raw/**/*.csv
+data/raw/**/*.txt
+data/raw/**/
+!data/raw/.gitkeep
+
+# Models - large model files
+ai-service/models/**/*.bin
+ai-service/models/**/*.safetensors
+ai-service/models/**/*.pt
+ai-service/models/**/*.pth
+ai-service/models/**/*.ckpt
+ai-service/models/**/pytorch_model.bin
+ai-service/models/**/model.safetensors
+!ai-service/models/**/*.json
+!ai-service/models/**/config.json
+!ai-service/models/**/tokenizer_config.json
+
+# Checkpoints
+**/checkpoint-*/
+**/runs/
+
+# Logs (keep only essential ones)
+*.log.backup
+*.log.old
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules (for future frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets
+*.pem
+*.key
+*.crt
+credentials.json
+secrets.json
