@@ -81,15 +81,17 @@ python train_generator.py
 
 ## 성능 지표
 
-### 분류 모델
-- Accuracy: 96%
-- F1-Score: 0.94
-- Training Loss: 0.0196
+### 분류 모델 (LLaMA-3.1-8B with QLoRA)
+- **검증 정확도**: 96.0%
+- **F1-Score (Macro)**: 0.756
+- **Validation Loss**: 0.355
+- **카테고리별 정확도**: 90-99%
 
-### 생성 모델
-- Final Loss: 0.69
-- Perplexity: ~2.0
-- Training Steps: 500
+### 생성 모델 (OpenChat-3.5 with QLoRA)
+- **Final Loss**: 0.71
+- **학습 시간**: 8시간 (500 steps)
+- **VRAM 사용**: 5.1GB (추론 시)
+- **생성 품질**: 민원 요약, 답변 생성 성공적 수행
 
 ## 기술 스택
 
