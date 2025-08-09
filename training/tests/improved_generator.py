@@ -9,7 +9,9 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import PeftModel
-from inference_filter import GenerationFilter
+import sys
+sys.path.append("..")
+from utils.inference_filter import GenerationFilter
 import warnings
 warnings.filterwarnings("ignore")
 
