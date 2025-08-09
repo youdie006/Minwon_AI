@@ -78,11 +78,14 @@ def test_generator():
         with torch.no_grad():
             outputs = model.generate(
                 **inputs,
-                max_new_tokens=150,
+                max_new_tokens=1000,  # 충분히 긴 답변을 위해 1000토큰으로 설정
                 temperature=0.7,
                 do_sample=True,
                 top_p=0.9,
-                pad_token_id=tokenizer.eos_token_id
+                pad_token_id=tokenizer.eos_token_id,
+                eos_token_id=tokenizer.eos_token_id,
+                repetition_penalty=1.1,  # 반복 방지
+                min_length=100  # 최소 길이 보장
             )
         
         # 디코딩
